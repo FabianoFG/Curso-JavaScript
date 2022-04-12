@@ -1,2 +1,2 @@
-# tiacademy_ciclo2
-Desafios do  ciclo 2 - JS
+Desafios do curso de JavaScript - TI Start Ciclo3
+Pela TI Academy
