@@ -1,2 +1,2 @@
-Desafios do curso de JavaScript - TI Start Ciclo3
+Repositório do curso de JavaScript - TI Start Ciclo3
 Pela TI Academy
