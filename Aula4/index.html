@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula4</title>
+</head>
+<script>
+    //if
+    var ano=2021;
+    if(ano==2022){
+        console.log("Estamos no ano: "+ano);
+    }
+
+    if(ano!=2023){
+        console.log("Ainda não chegou o ano 2023 ");
+    }
+
+    if(ano==2022){
+        console.log("O ano é igual a 2022");
+    }else if(ano!=2022){
+        console.log("O ano não é igual a 2022");
+    }
+
+    if(ano>=2022){
+        if(ano==2022){
+            console.log("O ano é igual a 2022");
+        }else{
+            console.log("O ano é maior que 2022");
+        }
+    }else{
+        console.log("O ano é menor que 2022");
+    }
+    //operador OU ||
+    var a=0;var b=0;var c=3;
+
+    if(a==1 || b==2 || c==2){
+        console.log("primeiro fluxo");
+    }else{
+        console.log("segundo fluxo");
+    }
+    //operador E &&
+    var x=7;var y=1;
+    if(x==1 && y==1){
+        console.log("primeiro fluxo");
+    }else{
+        console.log("segundo fluxo");
+    }
+
+    if(x!=y){
+        console.log("X é diferente de Y");
+    }else{
+        console.log("X é igual a Y");
+    }
+    //switch
+    switch(x){
+        case 1: console.log("Executando a tarefa 1");
+        break;
+
+        case 2: console.log("Executando a tarefa 2");
+        break;
+
+        case 5: console.log("Executando a tarefa 3");
+        break;
+
+        case 7: console.log(x+2);
+        break;
+
+        default: console.log("Esta opção não existe");
+        break;
+    }
+    //Exercício
+    var n=10;
+    if(n>10){
+        console.log("Valor maior que 10");
+    }else if(n<10){
+        console.log("Valor menor que 10");
+    }else if(n==10){
+        console.log("valor igual a 10");
+    }else{
+        console.log("Valor inválido");
+    }
+    console.log("Valor: "+n);
+</script>
+<body>
+    
+</body>
+</html>
