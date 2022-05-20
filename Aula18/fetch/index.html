@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Aula 18 - fetch</title>
+</head>
+<script>
+    window.onload = function(){
+        
+        function resultadoCep(dadosCep){
+            for(let campo in dadosCep){
+                if(document.querySelector(`#${campo}`)){
+                    document.querySelector(`#${campo}`).value = dadosCep[campo];
+                }
+            }
+        }
+
+        let dadosCep = async function(cep){
+            let url = `https://viacep.com.br/ws/${cep}/json/`;
+
+            try{
+                let dadosFetch = await fetch(url);
+                let dadosJson = await dadosFetch.json();
+                if(dadosJson.erro === 'true') throw new Error('Cep inválido!');
+                resultadoCep(dadosJson);
+                // console.log(dadosJson);
+            }catch(error){
+                if(error instanceof TypeError){
+                    alert('typeError: o valor especificado não é do tipo adequado para CEP!');
+                }else{
+                    alert(error);
+                }
+            }
+        }
+
+        // dadosCep(87053660);
+
+        const btnBuscar = document.querySelector('#buscarCep');
+        const cxCep = document.querySelector('#numeroCep');
+
+        btnBuscar.addEventListener('click',function(){
+            dadosCep(cxCep.value);
+        });
+    }
+</script>
+<body>
+    <input type="text" name="" id="numeroCep" placeholder="Digite um CEP válido">
+    <input type="text" name="" id="logradouro">
+    <input type="button" name="buscar" id="buscarCep" value="BUSCAR">
+</body>
+</html>

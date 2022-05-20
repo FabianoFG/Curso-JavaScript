@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint JS</title>
+</head>
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #txtNome{
+        width: 300px;
+        font-size: 24px;
+        color: blue;
+    }
+    #btnEnviar{
+        width: 200px;
+        padding: 8px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    window.onload = function(){
+        const txtNome = document.querySelector('#txtNome');
+        const btnEnviar = document.querySelector('#btnEnviar');
+        const btnProximo = document.querySelector('#btnProximo');
+
+        btnEnviar.addEventListener('click', function(){
+            let url = 'http://'+txtNome.value;
+            location.href = url;
+        });
+        //
+        let inc = -1;
+        let nome = ['Marcelo','José','Marina','Pedro'];
+
+        // console.log(nome[inc]);
+        // inc++;
+        // console.log(nome[inc]);
+
+        btnProximo.addEventListener('click', function(){
+            if(inc>=nome.length-1){
+                return;
+            }else{
+                inc++;
+                console.log(nome[inc]);
+            }
+        });
+        //
+        let precosFrutas = {
+            'maçã': 2.50,
+            'pêra': 4.35,
+            'abacate': 1.99,
+            'mamão': 2.09,
+            'laranja': 2.89
+        };
+        console.log(precosFrutas['maçã']);
+    }
+
+
+</script>
+<body>
+    <input type="text" value="" id="txtNome">
+    <input type="button" value="Clique" id="btnEnviar">
+    <input type="button" value="Proximo" id="btnProximo">
+</body>
+</html>
