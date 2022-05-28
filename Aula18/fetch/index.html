@@ -26,7 +26,7 @@
                 let dadosJson = await dadosFetch.json();
                 if(dadosJson.erro === 'true') throw new Error('Cep inválido!');
                 resultadoCep(dadosJson);
-                // console.log(dadosJson);
+                console.log(dadosJson);
             }catch(error){
                 if(error instanceof TypeError){
                     alert('typeError: o valor especificado não é do tipo adequado para CEP!');

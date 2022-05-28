@@ -5,7 +5,7 @@ window.onload = function(){
 
     btnCadastrar.addEventListener('click',function(){
         let li = document.createElement('li');
-        lista.appendChild(li).setAttribute('class','listaDeFrutas')
+        lista.appendChild(li).setAttribute('class','listaDeFrutas');
         lista.appendChild(li).textContent = cxProduto.value;
     });
 
