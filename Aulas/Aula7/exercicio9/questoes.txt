@@ -1,0 +1,7 @@
+Questão 1: var não varia escopo dentro de blocos, apenas de funções. let varia de
+escopo se estiver em blocos ou funções. const é constante, não podendo ter seu valor
+alterado depois de atribuído, e possui escopo por bloco
+
+Questão 2: Não. É opcional.
+
+Questão 3: Opção "C". <script src="caminho/nome_do_arquivo"></script>

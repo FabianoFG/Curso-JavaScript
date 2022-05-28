@@ -1,0 +1,2 @@
+Questão1:são locais na memória, que armazenam uma informação. Dividem-se em tipos.
+Questão2: tipo number. Representa um número

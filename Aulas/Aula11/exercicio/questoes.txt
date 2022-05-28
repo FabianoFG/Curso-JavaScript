@@ -1,0 +1,5 @@
+//Exercícios
+//Questão 1: substitui um caractere ou conjunto de caracteres por outro
+//Questão 2: ordena em ordem crescente
+//Questão 3: Não. Ele apenas possui suporte a objetos.
+//Questão 4: É uma palavra reservada que instancia um novo objeto, seguindo um modelo

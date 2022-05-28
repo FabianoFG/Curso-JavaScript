@@ -1,0 +1,5 @@
+Questão1: var umNumeroQualquer = 1.
+Questão2: undefined.
+Questão3: Primitivos e não primitivos. Exemplos: number, objeto, respectivamente.
+Questão4: Não. O JS é uma linguagem client-side. Ou seja, é executada na máquina do
+usuário, através do navegador.

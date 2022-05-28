@@ -1,0 +1,8 @@
+//EXERCÍCIO 1
+Questão1: Está errada, pois uma linguagem interpretada não precisa ser compilada, sendo execu-
+tado através de um navegador, ou de um ambiente de execução como o NodeJS.
+Questão2: Errado. Pode ser usado por meio de ambientes de execução como o NodeJS.
+
+//EXERCÍCIO 3
+Questão1: Criação de páginas web dinâmicas.
+Questão2: NetScape, no início dos anos 90.
