@@ -10,14 +10,14 @@
     --corBordas: #616161;
     --corTexto: #212121;
     --corCampo1: #FFECB3;
-    --corCampo2: grey;
-    --corCampo3: lightgrey;
-    --corBotao1: purple ;
+    --corCampo2: #BDBDBD;
+    --corCampo3: #E0E0E0;
+    --corBotao1: #9C27B0;
     --corBotao2: #2196F3;
-    --corBotao3: green;
-    --corBotaoTxt1: white;
-    --corBotaoTxt2: red;
-    --corBotaoTxt3: black;
+    --corBotao3: #388E3C;
+    --corBotaoTxt1: #FFF;
+    --corBotaoTxt2: #F00;
+    --corBotaoTxt3: #000;
     
 }
 .flex{
@@ -95,6 +95,37 @@
 .botaoSalvar{
     width: 80px;
     background-color: var(--corBotao3);
+}
+.bordaCimaBaixo{
+    padding: 5px 0 7px 0;
+    margin: 5px 0 5px 0;
+    border-top: 1px solid var(--corBordas);
+    border-bottom: 1px solid var(--corBordas);
+}
+.cmpLocProd{
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    margin: 3px;
+    border: 1px solid var(--corBordas);
+    border-radius: 3px;
+    font-size: 1.4rem;
+    font-style: normal;
+    color: var(--corTexto);
+}
+.botaoLocProd{
+    height: 30px;
+    padding: 5px;
+    margin: 3px;
+    border: 1px solid var(--corBordas);
+    border-radius: 3px;
+    font-size: 1.4rem;
+    color: var(--corBotaoTxt3);
+    cursor: pointer;
+}
+.titulo{
+    color: var(--corTexto);
+    font-size: 1.4rem;
 }
 .ocultar{
     display: none;
@@ -179,47 +210,15 @@ body > main{
 #btnLancarPed{
     width: 35%;
 }
-.bordaCimaBaixo{
-    padding: 5px 0 7px 0;
-    margin: 5px 0 5px 0;
-    border-top: 1px solid var(--corBordas);
-    border-bottom: 1px solid var(--corBordas);
-}
-.cmpLocProd{
-    width: auto;
-    height: 30px;
-    padding: 5px;
-    margin: 3px;
-    border: 1px solid var(--corBordas);
-    border-radius: 3px;
-    font-size: 1.4rem;
-    font-style: normal;
-    color: var(--corTexto);
-}
-.botaoLocProd{
-    height: 30px;
-    padding: 5px;
-    margin: 3px;
-    border: 1px solid var(--corBordas);
-    border-radius: 3px;
-    font-size: 1.4rem;
-    color: var(--corBotaoTxt3);
-    cursor: pointer;
-}
 #barraLocalizar{
     background-color: var(--corCampo2);
     align-items: center;
 }
 #tabela{
     margin-top: 5px;
-    font-size: 1.4rem;
-}
-.titulo{
-    color: var(--corTexto);
-    font-size: 1.4rem;
-}
-th{
     text-align: left;
+    font-size: 1.4rem;
+    color: var(--corBotaoTxt3);
 }
 #divtotal{
     width: 100%;
@@ -227,8 +226,6 @@ th{
 #totalPedido{
     margin: 0 0 0 auto;
     font-size: 1.4rem;
-    background-color: transparent;
     color: var(--corBotaoTxt2);
-    background-color: lightgrey;
-    align-items: flex-end;
+    background-color: var(--corCampo3);
 }

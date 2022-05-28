@@ -5,7 +5,7 @@ window.onload = function(){
 
     function verificarDados(usuario,senha,dadosJson){
 
-        let url = '../painel-flashJS/panel.html';
+        let url = './panel.html';
         let listaUsuarios = dadosJson['users'];
 
         let ver = ()=>{
@@ -37,7 +37,7 @@ window.onload = function(){
     };
 
     let dadosUsuarios = async function(){
-        let url = '../flashJS/usuario.json';
+        let url = './script/usuario.json';
         try{
             let dadosFetch = await fetch(url);
             let dadosJson = await dadosFetch.json();
